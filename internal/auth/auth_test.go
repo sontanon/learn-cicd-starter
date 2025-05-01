@@ -35,7 +35,7 @@ func TestGetAPIKey(t *testing.T) {
 				"Authorization": []string{"Bearer abc123"},
 			},
 			expected: "",
-			err:      ErrNoAuthHeaderIncluded,
+			err:      ErrMalformedAuthHeader,
 		},
 	}
 
